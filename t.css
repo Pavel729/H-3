@@ -1,0 +1,331 @@
+@import url('https://fonts.googleapis.com/css2?family=Grandstander:wght@300&family=Lobster&display=swap');
+
+:root{
+    --first-color: #ff5353;
+    --white-color: #ffffff;
+    --dark-color: #2A3B47;
+    --text-color: cyan;
+}
+
+*{
+	margin:0;
+	padding:0;
+	font-family: 'Grandstander', cursive;
+	
+	
+}
+
+.hero{
+	height:100vh;
+	overflow-x:hidden;
+	position:relative;
+	background-image:linear-gradient(rgba(0, 0, 0, 0.541),rgba(0, 0, 0, 0.61)),url(img/bg2.png) ;
+	background-size:cover;
+	background-position: center;
+	background-attachment: fixed;
+}
+
+.nav-bar{
+	display:flex;
+	padding:30px 128px;
+}
+
+/*
+
+.nav-logo img{
+	width:70px;
+	padding:10px;
+	transition:0.9s;
+
+}
+
+.nav-logo img:hover{
+	border:1px solid #FFFF00;
+	border-radius:50%;
+	padding:10px;
+}
+
+*/
+
+.nav__logo {
+  font-size: 2.5rem;
+  color: var(--first-color);
+  font-family: 'Lobster', cursive;
+}
+
+.nav-links{
+	flex:1;
+	
+}
+
+.nav-links ul{
+	margin-left:50px;
+	display:inline;
+	
+	
+	
+}
+
+.nav-links ul li{
+	list-style:none;
+	display:inline-block;
+	padding:8px 25px;
+	
+	
+}
+
+.nav-links ul a{
+	
+	color:var(--white-color);
+	text-decoration:none;
+	font-size:19px;
+}
+
+.nav-links ul li::after{
+	content:'';
+	width:0%;
+	height:2px;
+	background:var(--first-color);
+	display:block;
+	margin:auto;
+	transition:0.7s;
+}
+
+.nav-links ul li:hover::after{
+	width:100%;
+	
+}
+.nav-links .btn{
+	padding:10px;
+	border:0;
+	background:var(--first-color);
+	font-weight:bold;
+	cursor:pointer;
+	float:right;
+}
+
+.banner-title{
+	margin:80px 130px;
+	color:var(--white-color);
+	
+	
+}
+
+.banner-title h1{
+	font-size:40px;
+	margin-bottom:30px;
+}
+
+.banner-title h1 span{
+	color:var(--first-color);
+	
+}
+
+.btn2{
+	padding:10px;
+	border:0;
+	background:var(--first-color);
+	font-weight:bold;
+	cursor:pointer;
+}
+
+.vertical-bar{
+	height:100%;
+	background:var(--dark-color);
+	top:0;
+	left:0;
+	position:absolute;
+
+}
+
+.search-icon{
+	height:60%;
+	width:85px;
+
+	
+}
+
+.search-icon a{
+	text-decoration:none;
+}
+
+.search-icon .fas{
+	margin:30px;
+	display:block;
+	color:var(--first-color);
+	font-size:30px;
+	cursor:pointer;
+}
+
+.social-icon{
+	height:54%;
+	width:85px;
+	background:var(--first-color);
+	text-align:center;
+	padding-top:27%;
+	bottom:0;
+	position:absolute;
+}
+
+.social-icon .fab{
+	margin:15px 23px;
+	display:block;
+	padding:8px;
+	border:1px solid var(--dark-color);
+	border-radius:50%;
+	font-size:20px;
+	cursor:pointer;
+	
+}
+
+.social-icon a{
+	
+	text-decoration:none;
+	color:var(--dark-color);
+}
+
+.social-icon .fa-facebook-f:hover{
+	background:var(--dark-color);
+	color:#0000ff;
+	
+}
+
+.social-icon .fa-instagram:hover{
+	background:var(--dark-color);
+	color:#ff0000;
+	
+}
+
+.social-icon .fa-twitter:hover{
+	background:var(--dark-color);
+	color:skyblue;
+	
+}
+
+.social-icon .fa-font-awesome-flag:hover{
+	background:var(--dark-color);
+	color:#5FAAEC;
+	
+}
+
+.social-icon .fa-youtube:hover{
+	background:var(--dark-color);
+	color:red;
+	
+}
+
+.notifications{
+	display:flex;
+	width:350px;
+	right:0;
+	bottom:0;
+	position:absolute;
+	background:var(--first-color);
+	text-align:center;
+}
+
+.contents{
+	flex-basis:50%;
+	padding:15px;
+	
+}
+
+.contents a{
+	text-decoration:none;
+	color:var(--dark-color);
+	font-size:13px;
+	margin:0px 10px;
+	
+}
+
+.contents p{
+	text-align:center;
+	margin-top:30px;
+}
+
+
+/* .notification-img{
+	flex-basis:50%;
+	
+	
+}
+
+.notification-img img{
+	width:100%;
+	height:100%;
+} */
+
+
+.nav-bar .fas{
+	display:none;
+}
+
+@media (max-width:700px){
+	
+	.vertical-bar{
+		display:none;
+	}
+	.banner-title{
+		margin:60px 30px;
+	}
+	.banner-title h1{
+		font-size:30px;
+		
+	}
+	
+	/* .notifications{
+		width:100%;
+	
+	} */
+	
+	.nav-bar{
+		padding:8px 25px;
+	}
+	
+	.fa-bars{
+		position:absolute;
+		right:20px;
+		top:10px;	
+	}
+	
+	.nav-bar .fas{
+		display:block;
+		color:var(--white-color);
+		margin:10px 25px;
+		font-size:22px;
+		cursor:pointer;
+		
+	}
+	
+	.nav-links{
+		height:100vh;
+		width:200px;
+		background:var(--dark-color);
+		top:0;
+		right:-200px;
+		position:absolute;
+		text-align:left;
+		z-index:2;
+		transition:0.5s;
+	}
+	
+	.nav-bar ul a{
+		display:block;
+		
+		
+	}
+	
+	.nav-links .btn{
+	margin-left:25px;
+	margin-top:10px; 
+	float:none;
+	}
+	
+	
+	
+}
+
+
+
+
+
